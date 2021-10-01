@@ -1,0 +1,383 @@
+.footer, header{
+    background-color: #FF6347;
+}
+#logo{
+    padding-left: 35%;
+    
+}
+.hreffooter{
+    text-decoration: none;
+}
+
+.Activ{
+    border: rgb(5, 94, 5) solid 2px;
+    padding-bottom: 20px;
+    margin: 10px 20px 10px 10px;
+    border-radius: 7px;
+
+}
+.Desc{
+    border: red solid 2px;
+    padding-bottom: 20px;
+    margin: 10px 20px 50px 10px;
+    border-radius: 7px;
+}
+.h3title{
+    text-align: center;
+    font-size: 23px;
+    color: green;
+    margin-bottom: 50px;
+}
+.ptitle{
+    margin-left: 15%;
+    font-size: 20px;
+    width: 40%;
+    display: inline-block;
+
+}
+
+.menu ul{
+    /* margin: 0; */
+    margin-left: 10%;
+    margin-right: 10%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li {
+    border-right: 1px, solid #FFF;
+}
+.menu li:hover{
+    background: rgba(0, 0,0, 0.3);
+}
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+a{
+    color:#f3f6f3 ;
+}
+.lang{
+    height: 50px;
+    width: 50px;
+    display: inline;
+    float: right;
+    margin-right: 12%;
+    margin-top: -65px;
+
+}
+/* .menu ul li a{
+    display: inline;
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    color: green;
+height: 25px;
+width: 131px;
+text-align: left;
+font-weight: bold;
+} */
+.select{
+    display: inline-block;
+}
+.btnpomodoro{
+    border-radius: 5px;
+
+}
+.btnpomodoro2{
+    border-radius: 5px;
+    background-color: #FF6347;
+    font-size: 25px;
+    margin-left: 6%;
+    color: rgba(0,0,0,.75);
+    width: 150px;
+}
+.btnpomodoro2:hover{
+    cursor: pointer;
+}
+.h5pomodoro{
+    
+    font-size: 30px;
+    text-align:center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.h1title{
+    text-align: center;
+    font-size: 44px;
+}
+.PActivityUser{
+    width: 35%;
+     margin-left: 10%; 
+    font-size: 30px;
+    display: inline-block;
+}
+.timerActividadUser{
+    display: inline-block;
+    width: 30%;
+    margin-right: 79px;
+    font-size: 35px;
+    margin-top: 60px;
+    float: right;
+}
+.taskPomodoro{
+    margin-left: 10%;
+}
+#btnControlers{
+    width: 100%;
+}
+.inputTsk{
+    width: 70%;
+    height: 30px;
+    border: #FF6347 2px  dotted;
+    border-radius: 10px;
+}
+.Taskdiv{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 50px;
+}
+.h4InputTask{
+    text-align: center;
+    font-size: 23px;
+    
+}
+
+#timerDescansoUser{
+    display: inline-block;
+    width: 46%;
+    margin-left: 10px;
+    padding-left:7% ;
+    font-size: 35px;
+    border: green 1px solid;
+}
+.timermuestra{
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    border: 3px solid aqua;
+   
+    margin-left: 35%;
+    margin-top: -120px;
+}
+/* preguntas Faq */
+#divfaq{
+    margin: 3%;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+#TituloFaQ{
+    text-align: center;
+    font-size: 42px;
+
+} 
+
+.mainInfo .preguntasweb{
+    border: #0b0d13 1px solid;
+    border-radius: 7px;    
+}
+.preguntasweb{
+    margin-bottom: 30px;
+}
+.txt_faq{
+    margin-left: 2%;
+    
+}
+.PreguntasWeb .h3terminos{
+    text-align: center;
+    display: inline;
+    margin-left: 2%;    
+}
+.h3terminos{
+ font-size: 25px;
+}
+.InfoFAQ2{
+    display: inline;
+    margin-left: 53%;
+    border-radius: 10px;
+    border:#2e90ec 3px solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.PreguntasWeb{
+  margin-top: 20px;
+}
+
+hr{
+    border: #f04444 solid 2px;
+}
+/* formulario de contacto */
+#contactenos{
+    width: 80%;
+    margin-bottom: 70px;
+    margin-left: 5%;
+}
+label{
+    width: 150px;
+    display: inline-block;
+
+}
+
+.Footerdiv{
+    width: 44%;
+    margin-left: 2%;
+    padding-bottom: 2%;
+    display: inline-block;
+    
+}
+
+.Footerdiv a {
+    text-decoration: none;
+}
+.Footerdiv a :hover{
+    font-size: 17px;
+}
+.Footerdiv h4{
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+body {
+    width: 100%;
+    font: normal bold 16px/normal tahoma;
+}
+
+article {
+    width: 300px;
+    text-align: center;
+    background-color: crimson;
+    border-radius: 10px;
+    margin: 50px auto 20px;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px #ccc;
+}
+
+article h3 {
+    padding: 10px;
+    color: #fff;
+}
+article .count {
+    padding: 5px;
+}
+article #timer{
+    padding: 5px;
+    color: crimson;
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+
+/* mecanogfafia */
+/* .text-item {
+    height: 2em;
+    display: block;
+    background: rgba(0,0,0,.05);
+  }
+  .text-item:not(:last-child), .img-item {
+      margin-bottom: 1em;
+  }
+  .img-item {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    background: rgba(0,0,0,.05);
+  }
+  .img-item:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgba(0,0,0,.75);
+    font-size: 3.3em;
+  }
+
+  .h1meca{
+      margin-left: 5%;
+  }
+  .pmeca{
+      text-align: center;
+  } */
+  form {
+      width: 70%;
+      margin: auto;
+      background: rgba(0, 0,0, 0.1);
+      margin-top: 20px;
+      box-sizing: border-box;
+      border-radius: 20px;
+      padding-top: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+        }
+    input, textarea{
+        width: 88%;
+        margin-bottom: 20px;
+        padding: 17px;
+        margin-left: 3%;
+        margin-right: 5%;
+        font-size: 17px;
+        border:none;
+    }
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 89%;
+
+    }
+
+@media (max-width:478px){
+    form{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 478px) and (max-width: 701px){
+   
+    .InfoFAQ2{
+        margin-left: 33%;
+    }
+   
+    .h3terminos{
+        padding-left: 15%;
+        text-align: center;
+        color: red;
+    }
+    
+
+}
+
+  @media (max-width: 908px){
+    .btnpomodoro{
+       margin-left: 3%;
+       
+    }
+      .ptitle{
+          width: 100%;
+          margin-left: 40%;
+      }
+     
+.InfoFAQ2{
+    margin-left: 300px;
+}
+.InfoFAQ3{
+    margin-left: 500px;
+}
+  }
+
+  @media screen and (min-width: 908px) and (max-width: 1178px){
+    .ptitle{
+        width: 100%;
+       margin-left: 40%;
+       font-size:29px ;
+    }
+    .btnpomodoro{
+        margin-left: 12%;
+    }
+    .InfoFAQ3{
+        margin-left: 500px;
+    }
+}
+   
+
+  

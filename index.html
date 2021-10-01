@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./scripts.js"></script>
+    
+    <title>Pomodoro</title>
+</head>
+<body >
+    <header class="header">
+        <div id="nav">
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="#h5pomodoro">Sobre Pomodoro</a></li>
+                    <li><a href="#contactenos">Contacto</a></li>
+                </ul>
+                <div>
+                    <a href="./indexEng.html"><img src="./img/england-flag.png" alt="Eng" class="lang"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <h1 class="h1title">Bienvenido a PomodoroXPress</h1>
+    <nav><img src="./img/icomo.png" alt="" id="logo"></nav>
+    <div class="Activ">
+        
+        <div  > 
+            <h3 class="h3title"> 1) Selecciona que tarea va a realizar </h3> <br>
+            <div class="taskPomodoro"><label for="">Tarea</label><br>
+                <br>
+            <input type="text" class="inputTsk" id="Task" onchange="inputTask();"> </div>
+            <br>
+<h3 class="h3title"> 2) Eligie el tiempo de actividad y de descanso </h3>
+
+            <hr class="hrmiddle">
+            <p class="ptitle">Actividad</p> 
+            <button class="btnpomodoro" onclick="inner25();">25 min + 5 min Descanso</button>
+            <button class="btnpomodoro" onclick="inner30();">30 min + 5 min Descanso</button>
+            <button class="btnpomodoro" onclick="inner35();">35 min + 5 min Descanso</button>
+
+        </div>
+        <audio id="myAudio">
+            <source src="./mp3/musicarelax3.mp3" type="audio/mpeg">
+          </audio>
+        <hr>
+        <!-- prueba de boton 3-->
+        
+            
+         <div class="Taskdiv"> <h4 class="h4InputTask" id="H4task"></h4></div>
+
+        <!-- fin de prueba 3-->
+        <div> <p class="PActivityUser">Actividad</p> <p id="timerActividadUser"></p></div>
+        <div  class="timermuestra"> <span id="timer" class="timerActividadUser"></span></div>
+        
+     
+    </div>
+    <div class="Desc">
+        
+        <div > <h3 class="h3title">Tiempo de Descanso</h3>
+            
+        </div>
+        <div> <p class="PActivityUser">Descanso</p> <div class="timermuestra"> <span id="timer2" class="timerActividadUser"></span></div></div>
+    </div>
+
+    <div>
+        <div id="btnControlers">
+            <button class="btnpomodoro2" onclick="pauseAudio();">MUTE</button>
+            <button class="btnpomodoro2" onclick="playAudio();">PLAY</button>
+        </div>
+        <h5 class="h5pomodoro" id="h5pomodoro">
+            PomodoroXPress, Le prmite  obtener tus metas manteniéndote enfocado.
+            <br>
+            Para ello utilizaras la tecnica para administrar el tiempo en intervalos fijos.
+            <br>
+Con  o sin Música de Fondo,
+Tiempo predefinido, y lista de tareas
+        </h5>
+    </div>
+    <div id="divfaq">
+        <h1 class="TituloFaQ" id="TituloFaQ">Preguntas frecuentes</h1>
+
+
+        <hr style="width: 65%">
+        <div class="PreguntasWeb">
+            <h3 class="h3terminos">Por que usar esta tecnica </h3> <p class="InfoFAQ2 " onclick="muestra_oculta6('cont6Faq')">  Ver / ocultar Info <i class="fas fa-caret-square-down"></i></p>
+            <div class="preguntasweb" id="cont6Faq">
+                <p class="txt_faq">La técnica Pomodoro es usada principalmente para incrementar la productividad en el trabajo.<br>
+
+                    Esta tecnica tiene varios beneficios :<br>
+                    1. Maneja las distracciones y controla tu tiempo <br>
+                    2. Incrementa la responsabilidad <br>
+                    3. Mejorar la planificación <br>
+                    4. Mantener la motivación
+
+                </p>
+            
+            </div>
+            </div>
+            <hr style="width: 65%">
+        <div class="PreguntasWeb">
+        <h3 class="h3terminos">Uso del sitio</h3> <p class="InfoFAQ2" onclick="muestra_oculta('cont1Faq')">  Ver / ocultar Info <i class="fas fa-caret-square-down"></i></p>
+        
+        <div class="preguntasweb" id="cont1Faq">
+        <p class="txt_faq">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, distinctio ea corporis ab optio recusandae nobis impedit ipsam perferendis, consequatur eius dolorum atque, tempore quibusdam ipsum culpa voluptas repellendus cum?</p>
+        </div>
+        </div>
+        <hr style="width: 65%">
+        <div class="PreguntasWeb">
+        <h3 class="h3terminos">Como usar PomodoroXPress</h3> <p class="InfoFAQ2 InfoFAQ3" onclick="muestra_oculta2('cont2Faq')" id="x">  Ver / ocultar Info </p>
+        <div class="preguntasweb" id="cont2Faq">
+            <p class="txt_faq">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, distinctio ea corporis ab optio recusandae nobis impedit ipsam perferendis, consequatur eius dolorum atque, tempore quibusdam ipsum culpa voluptas repellendus cum?</p>
+        
+        </div>
+        </div>
+        <hr style="width: 65%">
+        <div class="PreguntasWeb">
+            <h3 class="h3terminos">Musica</h3> <p class="InfoFAQ2 " onclick="muestra_oculta3('cont2Faq')">  Ver / ocultar Info <i class="fas fa-caret-square-down"></i></p>
+            <div class="preguntasweb" id="cont3Faq">
+                <p class="txt_faq">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, distinctio ea corporis ab optio recusandae nobis impedit ipsam perferendis, consequatur eius dolorum atque, tempore quibusdam ipsum culpa voluptas repellendus cum?</p>
+            
+            </div>
+            </div>
+
+    </div>
+    <div id="contactenos">
+        <h1 class="TituloFaQ" id="TituloFaQ">Contactenos</h1>
+
+        <form method="POST" action="pagina2.php" >
+
+<input type="text" id="nombre" name="nombre" required placeholder="Nombre"><br><br>
+
+<input type="text" id="correo" name="correo" required placeholder="Correo"><br><br>
+
+<input type="text" id="asunto" name="asunto" required placeholder="Asunto"><br><br>
+
+<textarea name="mensaje" id="" cols="30" rows="10" required placeholder="Mensaje"></textarea><br><br>
+
+            <input type="Submit" class="btnpomodoro2"> <input type="reset" class="btnpomodoro2" value="Reset">
+        </form>
+    </div>
+    <footer class="footer" >
+        <div class="Footerdiv">
+            <h4>Contactenos</h4>
+            <a href="tel:+598219345848"><p class="hreffooter">Tel: 219345848</p></a>
+            <a href=""><p class="hreffooter"> Envianos tu comentario</p></a>
+        </div>
+        <div class="Footerdiv">
+            <h4>Nosotros</h4>
+            <a href=""><p class="hreffooter">La Empresa</p></a>
+            <a href=""><p class="hreffooter">Politicas de uso</p> </a>
+        </div>
+
+    </footer>
+    <script src="./scripts.js"></script>
+</body>
+</html>

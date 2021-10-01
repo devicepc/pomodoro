@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./scripts.js"></script>
+    
+    <title>Pomodoro</title>
+</head>
+<body >
+    <header class="header">
+        <div id="nav">
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="">Index</a></li>
+                    <li><a href="#h5pomodoro">About Pomodoro</a></li>
+                    <li><a href="#contactenos">Contact us</a></li>
+                </ul>
+                <div>
+                    
+                    <a href="./index.html"><img src="./img/spain-flag.png" alt="Español" class="lang"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <h1 class="h1title">Welcome  to PomodoroXPress</h1>
+    <nav><img src="./img/icomo.png" alt="" id="logo"></nav>
+    <div class="Activ">
+        
+        <div  > 
+            <h3 class="h3title"> 1) Select what task to perform </h3> <br>
+            <div class="taskPomodoro"><label for="">Task</label><br>
+                <br>
+            <input type="text" class="inputTsk" id="Task" onchange="inputTask();"> </div>
+            <br>
+<h3 class="h3title"> 2) Choose the time of activity and rest </h3>
+
+            <hr class="hrmiddle">
+            <p class="ptitle">Activity</p> 
+            <button class="btnpomodoro" onclick="inner25();">25 min + 5 min Break</button>
+            <button class="btnpomodoro" onclick="inner30();">30 min + 5 min Break</button>
+            <button class="btnpomodoro" onclick="inner35();">35 min + 5 min Break</button>
+
+        </div>
+        <audio id="myAudio">
+            <source src="./mp3/musicaprueba2.mp3" type="audio/mpeg">
+          </audio>
+        <hr>
+        <!-- prueba de boton 3-->
+        
+            
+         <div class="Taskdiv"> <h4 class="h4InputTask" id="H4task"></h4></div>
+
+        <!-- fin de prueba 3-->
+        <div> <p class="PActivityUser">Activity</p> <p id="timerActividadUser"></p></div>
+        <div  class="timermuestra"> <span id="timer" class="timerActividadUser"></span></div>
+        
+     
+    </div>
+    <div class="Desc">
+        
+        <div > <h3 class="h3title">Break time</h3>
+            
+        </div>
+        <div> <p class="PActivityUser">Break</p> <div class="timermuestra"> <span id="timer2" class="timerActividadUser"></span></div></div>
+    </div>
+
+    <div>
+        <div id="btnControlers">
+            <button class="btnpomodoro2" onclick="pauseAudio();">MUTE</button>
+            <button class="btnpomodoro2" onclick="playAudio();">PLAY</button>
+        </div>
+        <h5 class="h5pomodoro" id="h5pomodoro">
+            PomodoroXPress, It allows you to achieve your goals by staying focused.
+            <br>
+            To do this you will use the technique to manage time in fixed intervals.
+            <br>
+            With Background Music, Custom Timing, To Do List
+
+        </h5>
+    </div>
+    <div id="divfaq">
+        <h1 class="TituloFaQ" id="TituloFaQ">Frequent questions</h1>
+
+        <div class="PreguntasWeb">
+        <h3 class="h3terminos">Use of the site</h3> <p class="InfoFAQ2" onclick="muestra_oculta('cont1Faq')">  View / Hide Info <i class="fas fa-caret-square-down"></i></p>
+        
+        <div class="preguntasweb" id="cont1Faq">
+        <p class="txt_faq">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, distinctio ea corporis ab optio recusandae nobis impedit ipsam perferendis, consequatur eius dolorum atque, tempore quibusdam ipsum culpa voluptas repellendus cum?</p>
+        </div>
+        </div>
+        <hr style="width: 65%">
+        <div class="PreguntasWeb">
+        <h3 class="h3terminos">How to use PomodoroXPress</h3> <p class="InfoFAQ2 InfoFAQ3" onclick="muestra_oculta2('cont2Faq')" id="x">  View / Hide Info </p>
+        <div class="preguntasweb" id="cont2Faq">
+            <p class="txt_faq">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, distinctio ea corporis ab optio recusandae nobis impedit ipsam perferendis, consequatur eius dolorum atque, tempore quibusdam ipsum culpa voluptas repellendus cum?</p>
+        
+        </div>
+        </div>
+        <hr style="width: 65%">
+        <div class="PreguntasWeb">
+            <h3 class="h3terminos">Music</h3> <p class="InfoFAQ2 " onclick="muestra_oculta3('cont2Faq')">  View / Hide Info <i class="fas fa-caret-square-down"></i></p>
+            <div class="preguntasweb" id="cont3Faq">
+                <p class="txt_faq">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, distinctio ea corporis ab optio recusandae nobis impedit ipsam perferendis, consequatur eius dolorum atque, tempore quibusdam ipsum culpa voluptas repellendus cum?</p>
+            
+            </div>
+            </div>
+
+    </div>
+    <div id="contactenos">
+        <h1 class="TituloFaQ" id="TituloFaQ">Contact US</h1>
+
+        <form method="POST" action="pagina2.php" >
+
+<input type="text" id="nombre" name="nombre" required placeholder="Nombre"><br><br>
+
+<input type="text" id="correo" name="correo" required placeholder="Correo"><br><br>
+
+<input type="text" id="asunto" name="asunto" required placeholder="Asunto"><br><br>
+
+<textarea name="mensaje" id="" cols="30" rows="10" required placeholder="Mensaje"></textarea><br><br>
+
+            <input type="Submit" class="btnpomodoro2"> <input type="reset" class="btnpomodoro2" value="Reset">
+        </form>
+    </div>
+    <footer class="footer" >
+        <div class="Footerdiv">
+            <h4>Contact US</h4>
+            <a href="tel:+598219345848"><p class="hreffooter">Tel: 219345848</p></a>
+            <a href=""><p class="hreffooter"> Send us your comment</p></a>
+        </div>
+        <div class="Footerdiv">
+            <h4>U.S</h4>
+            <a href=""><p class="hreffooter">The company</p></a>
+            <a href=""><p class="hreffooter">Policies of use</p> </a>
+        </div>
+
+    </footer>
+    <script src="./scripts.js"></script>
+</body>
+</html>
